@@ -175,8 +175,8 @@ FeetInches::FeetInches(const FeetInches& other)
 
 double FeetInches::operator*(const FeetInches& right) const
 {
-	int leftTotalInches = feet * 12 + inches;
-	int rightTotalInches = right.feet * 12 + right.inches;
+	const long long leftTotalInches = feet * 12LL + inches;
+	const long long rightTotalInches = right.feet * 12LL + right.inches;
 	double squareInches = static_cast<double>(leftTotalInches) * rightTotalInches;
 	return squareInches / 144.0;
 }

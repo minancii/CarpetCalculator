@@ -139,7 +139,7 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CarpetCalculator.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="FeetInches.cpp" />
     <ClCompile Include="RoomCarpet.cpp" />
     <ClCompile Include="RoomDimension.cpp" />
