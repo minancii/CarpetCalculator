@@ -24,12 +24,18 @@
     <ClCompile Include="RoomDimension.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RoomCarpet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FeetInches.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RoomDimension.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RoomCarpet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
