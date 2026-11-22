@@ -21,6 +21,9 @@ private:
 	int inches;      // To hold a number of inches
 	void simplify(); // Defined in FeetInches.cpp
 public:
+	FeetInches(const FeetInches& other);
+	double operator*(const FeetInches& right) const;
+
 	// Constructor
 	FeetInches(int f = 0, int i = 0)
 	{

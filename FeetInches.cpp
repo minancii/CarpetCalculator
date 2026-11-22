@@ -168,7 +168,18 @@ istream& operator >> (istream& strm, FeetInches& obj)
 
 	return strm;
 }
+FeetInches::FeetInches(const FeetInches& other)
+	: feet(other.feet), inches(other.inches)
+{
+}
 
+double FeetInches::operator*(const FeetInches& right) const
+{
+	int leftTotalInches = feet * 12 + inches;
+	int rightTotalInches = right.feet * 12 + right.inches;
+	double squareInches = static_cast<double>(leftTotalInches) * rightTotalInches;
+	return squareInches / 144.0;
+}
 //*************************************************************
 // Conversion function to convert a FeetInches object         *
 // to a double.                                               *
