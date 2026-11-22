@@ -1,5 +1,6 @@
 #include <iostream>
 #include "FeetInches.h"
+#include "RoomDimension.h"
 
 int main()
 {
@@ -15,4 +16,7 @@ int main()
         << ", copied feet: " << copy.getFeet() << '\n';
 
     std::cout << "Area: " << length * width << " sq ft\n";
+    RoomDimension room(length, width);
+    length.setFeet(9);
+    std::cout << "Room area: " << room.getArea() << " sq ft\n";
 }
